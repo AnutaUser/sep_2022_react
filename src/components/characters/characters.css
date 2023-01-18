@@ -1,0 +1,8 @@
+.characters {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    justify-content: space-evenly;
+    row-gap: 3vw;
+}

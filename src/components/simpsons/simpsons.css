@@ -1,0 +1,8 @@
+.simpsons {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 6vh;
+    row-gap: 6vh;
+}

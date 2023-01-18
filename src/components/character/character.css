@@ -1,0 +1,14 @@
+.character {
+    width: 43vw;
+    text-align: center;
+}
+
+img {
+    width: 43vw;
+    height: 45vw;
+}
+
+.episodes {
+    max-height: 12vw;
+    overflow: scroll;
+}
