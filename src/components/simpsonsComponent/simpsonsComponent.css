@@ -1,0 +1,27 @@
+.simpsonCard {
+    border: .2vw solid darkslateblue;
+    width: 28vw;
+    height: 40vh;
+}
+
+img {
+    width: 70%;
+    height: 70%;
+}
+
+@media screen and (max-width: 500px){
+
+    .simpsonCard {
+        border: .2vw solid darkslateblue;
+        width: 42vw;
+        height: 25vh;
+    }
+
+    h2 {
+        font-size: 90%;
+    }
+
+   img {
+       height: 60%;
+   }
+}
