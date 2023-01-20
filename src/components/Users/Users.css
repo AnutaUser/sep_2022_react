@@ -1,0 +1,14 @@
+.users {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.hr {
+    height: 100vh;
+    width: .5vw;
+    background: darkslateblue;
+}
+.block {
+    margin: 0 auto;
+}

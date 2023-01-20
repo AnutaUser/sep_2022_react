@@ -1,0 +1,7 @@
+.user {
+    width: 30vw;
+    background: coral;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,9 +1,15 @@
 import React from 'react';
 
+import {UserDetails, Users} from "./components";
+
 const App = () => {
     return (
         <div>
-            App
+            <div>
+                <Users/>
+                <UserDetails/>
+            </div>
+
         </div>
     );
 };
