@@ -1,9 +1,17 @@
 import React from 'react';
 
-const Post = () => {
+import './Post.css';
+
+const Post = ({post}) => {
+
+    const {userId, id, title, body} = post;
+
     return (
-        <div>
-            Post
+        <div className={'post'}>
+            <p>UserId: {userId}</p>
+            <p>Iid: {id}</p>
+            <h3>Title: {title}</h3>
+            <p>Body: {body}</p>
         </div>
     );
 };

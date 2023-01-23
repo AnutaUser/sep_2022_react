@@ -2,16 +2,16 @@ import React, {useEffect, useState} from 'react';
 
 import {userService} from "../../services";
 
-const UserDetails = ({userId, removeUser, postId, setPostId}) => {
+const UserDetails = ({userDetailsId, setUserDetailsId, postId, setPostId}) => {
 
     const [userDetails, setUserDetails] = useState(null);
 
     useEffect(() => {
 
-        if (userId) {
-            userService.getById(userId).then(value => value.data).then(value => setUserDetails(value));
+        if (userDetailsId) {
+            userService.getById(userDetailsId).then(({data}) => setUserDetails(data));
         }
-    }, [userId]);
+    }, [userDetailsId]);
 
     if (!userDetails) {
         return null
@@ -51,8 +51,9 @@ const UserDetails = ({userId, removeUser, postId, setPostId}) => {
                 <div>CatchPhrase: {catchPhrase}</div>
                 <div>bs: {bs}</div>
             </div>
-            <button onClick={() => removeUser(null)}>Remove</button>
-            <button onClick={() => setPostId(id)}>User posts</button>
+            <button onClick={() => setUserDetailsId(null)}>Remove</button>
+            {<button onClick={() => setPostId(id)}>Show posts</button>}
+            {/*{!!postId && <button onClick={() => setPostId([])}>Hide posts</button>}*/}
         </div>
     );
 };

@@ -1,11 +1,27 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 
-const Posts = ({userId, setPostId}) => {
+import './Posts.css';
+import {postService} from "../../services";
+import {Post} from "../Post/Post";
 
+const Posts = ({postId}) => {
 
+    const [posts, setPosts] = useState([]);
+
+    useEffect(() => {
+        if(postId) {
+            postService.getByUserId(postId).then(({data}) => setPosts(data));
+        }
+    }, [postId]);
+
+    if (!postId) {
+        return [];
+    }
+    console.log(postId);
+    console.log(posts);
     return (
-        <div>
-            Posts
+        <div className={'posts'}>
+            {!!posts && posts.map(post => <Post key={post.id} post={post}/>)}
         </div>
     );
 };

@@ -1,2 +1,11 @@
+.post {
+    width: 17vw;
+    border: .3vw solid coral;
+    text-align: justify;
+    padding: .5vw;
+    box-sizing: border-box;
+}
 
-
+h3 {
+    text-align: center;
+}

@@ -9,7 +9,7 @@ import {Posts} from "../Posts/Posts";
 const Users = () => {
 
     const [users, setUsers] = useState([]);
-    const [userId, setUserId] = useState(null);
+    const [userDetailsId, setUserDetailsId] = useState(null);
     const [postId, setPostId] = useState(null);
 
     useEffect(() => {
@@ -21,17 +21,18 @@ const Users = () => {
         <div>
             <div className={'users'}>
                 <div className={'block'}>
-                    {!!users.length && users.map(user => <User key={user.id} user={user} setUserId={setUserId}/>)}
+                    {!!users.length && users.map(user => <User key={user.id} user={user} setUserDetailsId={setUserDetailsId}/>)}
                 </div>
                 <div className={'hr'}></div>
                 <div className={'block'}>
-                    {!!userId && <UserDetails userId={userId} removeUser={setUserId} postId={postId} setPostId={setPostId}/>}
+                    {!!userDetailsId && <UserDetails userDetailsId={userDetailsId} setUserDetailsId={setUserDetailsId} postId={postId} setPostId={setPostId}/>}
                 </div>
             </div>
+
             {!!postId &&
                 <div>
                     <hr/>
-                    <Posts userId={userId} setPostId={setPostId}/>
+                    <Posts postId={postId}/>
                 </div>
             }
             <div>
