@@ -1,9 +1,12 @@
 import React from 'react';
 
+import {Movies, Users} from './components';
+
 const App = () => {
     return (
         <div>
-            App
+            {/*<Users/>*/}
+            <Movies/>
         </div>
     );
 };
