@@ -1,0 +1,7 @@
+.NotFoundPage {
+    background-image: url("../../images/404-error-page-not-found.jpg");
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}

@@ -1,0 +1,15 @@
+.PostComment{
+text-align: center;
+    padding: 1vw;
+}
+
+.hr {
+    width: 100vw;
+    background: coral;
+    height: .5vw;
+}
+
+p {
+    font-size: 20px;
+    text-align: justify;
+}

@@ -1,0 +1,7 @@
+.Albums {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 3vw;
+    padding-top: 3vw;
+}

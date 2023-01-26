@@ -1,0 +1,14 @@
+.Comment {
+    width: 17vw;
+    border-bottom: .4vw solid coral;
+    border-left: .4vw solid coral;
+    padding-left: 1vw;
+}
+
+.Comment a {
+    color: black;
+}
+
+.Comment a[class='active'] {
+    color: gray;
+}

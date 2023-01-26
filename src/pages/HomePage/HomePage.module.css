@@ -1,0 +1,7 @@
+.HomePage {
+    background-image: url("../../images/iStock-1127167754-2340x1000.jpg");
+    height: calc(100vh - 7vw);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
