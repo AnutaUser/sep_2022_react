@@ -8,7 +8,7 @@ const Comment = ({comment}) => {
     const {postId, id, name} = comment;
 
     return (
-        <div className={css.Comment}>
+        <div id={id} className={css.Comment}>
 
             <NavLink to={postId.toString()}>
                 <div>PostId: {postId}</div>
