@@ -1,0 +1,6 @@
+.Comment{
+    border-left: .5vw solid chartreuse;
+    padding-left: .5vw;
+    width: 17vw;
+    box-sizing: border-box;
+}
