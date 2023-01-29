@@ -1,0 +1,13 @@
+.CarForm{
+    text-align: center;
+    padding: .4vw;
+}
+
+.CarForm input {
+    width: 20vw;
+    height: 2vw;
+    border: .5vw solid #61dafb;
+    border-radius: .3vw;
+    margin-bottom: .3vw;
+    font-size: 120%;
+}
