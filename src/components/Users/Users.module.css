@@ -1,0 +1,7 @@
+.Users {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2vw;
+    row-gap: 2vw;
+    justify-content: space-evenly;
+}

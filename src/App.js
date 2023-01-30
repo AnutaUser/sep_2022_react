@@ -2,7 +2,7 @@ import React from "react";
 import {Route, Routes} from "react-router-dom";
 
 import {MainLayout} from "./layouts";
-import {CarsPage, HomePage, NotFoundPage} from "./pages";
+import {CarsPage, HomePage, NotFoundPage, UsersPage} from "./pages";
 
 const App = () => {
 
@@ -13,6 +13,7 @@ const App = () => {
 
                     <Route index element={<HomePage/>}/>
                     <Route path={'cars'} element={<CarsPage/>}/>
+                    <Route path={'users'} element={<UsersPage/>}/>
                     <Route path={'*'} element={<NotFoundPage/>}/>
 
                 </Route>

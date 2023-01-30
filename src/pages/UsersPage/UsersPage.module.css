@@ -1,0 +1,10 @@
+.UsersPage {
+    margin-left: 20vw;
+    width: 80vw;
+}
+
+.UsersPageHr {
+    width: 100%;
+    height: 1vw;
+    background: #61dafb;
+}

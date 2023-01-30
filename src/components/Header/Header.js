@@ -9,6 +9,7 @@ const Header = () => {
         <div className={css.Header}>
             <NavLink to={''}>HOME</NavLink>
             <NavLink to={'cars'}>CARS</NavLink>
+            <NavLink to={'users'}>USERS</NavLink>
         </div>
     );
 };

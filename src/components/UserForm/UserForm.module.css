@@ -1,0 +1,8 @@
+.UserForm{
+    text-align: center;
+}
+
+.UserFormEach {
+    display: flex;
+    justify-content: center;
+}
