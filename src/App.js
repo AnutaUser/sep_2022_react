@@ -1,10 +1,10 @@
 import React from "react";
-import {Route, Routes} from "react-router-dom";
+import {Navigate, Route, Routes} from "react-router-dom";
 
 import {MainLayout} from "./layouts";
 import {
     AlbumsPage,
-    CommentsPage,
+    CommentsPage, ContextPage,
     HomePage,
     NotFoundPage,
     PhotosPage,
@@ -20,7 +20,9 @@ const App = () => {
             <Routes>
                 <Route path={'/'} element={<MainLayout/>}>
 
-                    <Route index element={<HomePage/>}/>
+                    <Route index element={<Navigate to={'home'}/>}/>
+
+                    <Route path={'home'} element={<HomePage/>}/>
 
                     <Route path={'users'} element={<UsersPage/>}>
                         <Route path={':userId'} element={<UserDetailsPage/>}>
@@ -35,6 +37,8 @@ const App = () => {
                     <Route path={'albums'} element={<AlbumsPage/>}>
                         <Route path={':albumId'} element={<PhotosPage/>}/>
                     </Route>
+
+                    <Route path={'context'} element={<ContextPage/>}/>
 
                     <Route path={'*'} element={<NotFoundPage/>}/>
 

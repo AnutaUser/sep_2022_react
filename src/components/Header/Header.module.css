@@ -11,3 +11,7 @@
 .Header a {
     text-decoration: none;
 }
+
+.Header a[class='active']{
+    color: gray;
+}

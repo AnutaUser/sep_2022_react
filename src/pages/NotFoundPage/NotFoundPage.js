@@ -3,7 +3,7 @@ import React from "react";
 const NotFoundPage = () => {
 
     return (
-        <h1 style={{textAlign:'center', paddingTop: '40%', color: 'red'}}>
+        <h1 style={{display:'flex', justifyContent: 'center', color: 'red'}}>
             NotFoundPage
         </h1>
     );

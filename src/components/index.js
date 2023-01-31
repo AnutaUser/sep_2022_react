@@ -1,5 +1,6 @@
 export * from './Album/Album';
 export * from './Albums/Albums';
+export * from './Button/Button';
 export * from './Comment/Comment';
 export * from './Comments/Comments';
 export * from './Header/Header';

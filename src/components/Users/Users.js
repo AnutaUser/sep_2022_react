@@ -21,5 +21,5 @@ const Users = () => {
 };
 
 export {
-    Users
+    Users,
 };

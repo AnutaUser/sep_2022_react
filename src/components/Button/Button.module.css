@@ -1,0 +1,18 @@
+.Button{
+    width: 20vw;
+    height: 6vw;
+    background: chartreuse;
+    color: #3a2d2d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vw;
+    font-weight: bold;
+    margin: 10vw;
+    cursor: pointer;
+}
+
+.Button:hover {
+    background: gray;
+    color: chartreuse;
+}
