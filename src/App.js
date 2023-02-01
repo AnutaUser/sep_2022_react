@@ -5,13 +5,14 @@ import {MainLayout} from "./layouts";
 import {
     AlbumsPage,
     CommentsPage,
-    HomePage,
+    HomePage, LoginPage,
     NotFoundPage,
     PhotosPage,
     PostsPage,
     UserDetailsPage, UserDetailsPostsPage,
     UsersPage
 } from "./pages";
+import {RequireAuth} from "./components/hoc";
 
 const App = () => {
 
@@ -28,7 +29,13 @@ const App = () => {
                         </Route>
                     </Route>
 
-                    <Route path={'posts'} element={<PostsPage/>}>
+                    <Route path={'login'} element={<LoginPage/>}/>
+
+                    <Route path={'posts'} element={
+                        <RequireAuth>
+                            <PostsPage/>
+                        </RequireAuth>
+                    }>
                         <Route path={':postId'} element={<CommentsPage/>}/>
                     </Route>
 

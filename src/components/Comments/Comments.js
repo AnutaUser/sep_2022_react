@@ -10,7 +10,6 @@ const Comments = () => {
     const [comments, setComments] = useState([]);
 
     const {postId} = useParams();
-    console.log(postId);
 
     useEffect(() => {
         if (postId) {
