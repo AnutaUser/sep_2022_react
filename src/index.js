@@ -9,6 +9,7 @@ import {App} from './App';
 export const MyContext = createContext(null);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
     <MyContext.Provider value={{name: 'Max', surname: 'Pupkin', age: 35}}>
         <React.StrictMode>
