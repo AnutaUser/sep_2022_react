@@ -1,0 +1,42 @@
+.Header {
+    height: 10vw;
+    background: #282c34;
+    font-size: 7vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Header a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.Header a[class='active'] {
+    color: #bbbfc2;
+}
+
+.UserBlock {
+    display: flex;
+}
+
+.User {
+    background: aliceblue;
+    color: #282c34;
+    border-radius: 50%;
+    width: 7vw;
+    height: 7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    height: fit-content;
+    color: aliceblue;
+    background: none;
+    border: none;
+    font-size: x-small;
+    margin-top: 40%;
+    cursor: pointer;
+}

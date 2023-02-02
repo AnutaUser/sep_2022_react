@@ -1,0 +1,11 @@
+.Car{
+    width: 17vw;
+    background: #282c34;
+    color: aliceblue;
+    padding: 1vw;
+}
+
+.Car button {
+    background: aliceblue;
+    color: #282c34;
+}
