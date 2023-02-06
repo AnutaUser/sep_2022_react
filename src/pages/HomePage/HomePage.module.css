@@ -1,0 +1,8 @@
+.HomePage{
+    background-image: url("../../images/depositphotos_50284411-stock-photo-welcome-on-a-blue-label.jpg");
+    height: 100vh;
+    width: 100%;
+    background-size: 100% 100%;
+    background-attachment: scroll;
+    background-position: center;
+}

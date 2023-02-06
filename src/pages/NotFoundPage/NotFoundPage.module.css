@@ -1,0 +1,8 @@
+.NotFoundPage{
+    background-image: url("../../images/page-not-found-404-banner-2328542.jpg");
+    height: 100vh;
+    width: 100%;
+    background-size: 100% 100%;
+    background-attachment: scroll;
+    background-position: center;
+}

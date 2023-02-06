@@ -1,0 +1,43 @@
+.CatsDogsPage{
+    background: #dfe5e5;
+    width: 100%;
+    padding-top: 2vw;
+}
+
+.Forms {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Input  input {
+    background: deeppink;
+    color: #706b6b;
+    height: 2.5vw;
+    width: 20vw;
+    margin-bottom: .5vw;
+    font-size: 1.6vw;
+    font-weight: bold;
+    border: .2vw solid #706b6b;
+    border-radius: .5vw;
+}
+
+.Button {
+    background: #706b6b;
+    color: deeppink;
+    border: none;
+    width: 100%;
+    border-radius: .4vw;
+}
+
+.Hr {
+    width: 100%;
+    height: 1vw;
+    background: #706b6b;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+.Pets {
+    display: flex;
+    justify-content: space-evenly;
+}
