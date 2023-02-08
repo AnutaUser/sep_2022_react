@@ -1,0 +1,7 @@
+.HomePage {
+    background-image: url("../../images/pexels-stein-egil-liland-1933239.jpg");
+    height: 100vh;
+    width: 80vw;
+    background-position: center;
+    background-size: 100% 100%;
+}

@@ -1,0 +1,23 @@
+.Header {
+    height: 100vh;
+    width: 20vw;
+    background: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.Header a {
+    text-decoration: none;
+    background: chartreuse;
+    width: 90%;
+    font-size: 5vw;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Header a[class='active'] {
+    background: rgba(127, 255, 0, 0.68);
+}
+

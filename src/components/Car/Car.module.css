@@ -1,0 +1,6 @@
+.Car {
+    width: 17%;
+    border: .5vw solid grey;
+    padding: .5vw;
+    box-sizing: border-box;
+}
