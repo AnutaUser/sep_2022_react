@@ -11,7 +11,7 @@ const Photos = () => {
     const {photos} = useSelector(state => state['photos']);
 
     useEffect(() => {
-        dispatch(photosActions.getAll());
+        dispatch(photosActions.getAll(5));
     }, [dispatch]);
 
     return (

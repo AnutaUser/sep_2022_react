@@ -8,7 +8,7 @@ const PhotoDetails = () => {
 
     const dispatch = useDispatch();
     const {id} = useParams();
-    const {photo} = useSelector(state => state['photos']);
+    const {photo, errors, loading} = useSelector(state => state['photos']);
 
     useEffect(() => {
         dispatch(photosActions.getById(id));
@@ -19,7 +19,9 @@ const PhotoDetails = () => {
             {
                 !!photo &&
                 <div>
-                    {photo.title[0]}
+                    {errors && JSON.stringify(errors)}
+                    {loading && <h1>Loading ......... </h1>}
+                    {photo.title[0].toUpperCase() + photo.title.slice(1)}
                     <img src={photo.url} alt={photo.title}/>
                 </div>
             }
