@@ -21,3 +21,13 @@
     background: rgba(127, 255, 0, 0.68);
 }
 
+.LogReg {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.LogReg a {
+    font-size: 2vw;
+    width: 48%;
+}

@@ -16,7 +16,6 @@ const CarForm = () => {
 
     const dispatch = useDispatch();
     const {carForUpdate} = useSelector(state => state.cars);
-    // console.log(carForUpdate.id);
 
     const create = async (car) => {
         await dispatch(carActions.create({car}));

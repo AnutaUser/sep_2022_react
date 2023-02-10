@@ -7,13 +7,16 @@ const initialState = {
     carForUpdate: null,
     errors: null,
     loading: null,
+    prev: null,
+    next: null,
+    userLogOut: null
 };
 
 const getAll = createAsyncThunk(
     'carSlice/getAll',
-    async (_, thunkAPI) => {
+    async ({page}, thunkAPI) => {
         try {
-            const {data} = await carService.getAll();
+            const {data} = await carService.getAll(page);
             return data;
         } catch (e) {
             return thunkAPI.rejectWithValue(e.response.data);
@@ -24,10 +27,10 @@ const getAll = createAsyncThunk(
 
 const create = createAsyncThunk(
     'carSlice/create',
-    async ({car}, thunkAPI) => {
+    async ({car, page}, thunkAPI) => {
         try {
-            await carService.create(car);
-            thunkAPI.dispatch(getAll());
+            await carService.create(car, page);
+            thunkAPI.dispatch(getAll(page));
         } catch (e) {
             return thunkAPI.rejectWithValue(e.response.data);
         }
@@ -50,8 +53,7 @@ const update = createAsyncThunk(
     'carSlice/setCar',
     async ({id, car}, thunkAPI) => {
         try {
-            const {data} = await carService.update(id, car);
-            console.log(data);
+            await carService.update(id, car);
             thunkAPI.dispatch(getAll());
         }catch (e) {
             return thunkAPI.rejectWithValue(e.response.data);
@@ -72,7 +74,10 @@ const carSlice = createSlice({
         builder
             .addCase(getAll.fulfilled, (state, action) => {
                 state.loading = false;
-                state.cars = action.payload;
+                const {prev, next, items} = action.payload;
+                state.cars = items;
+                state.prev = prev;
+                state.next = next;
             })
             .addCase(getAll.pending, state => {
                 state.loading = true;
