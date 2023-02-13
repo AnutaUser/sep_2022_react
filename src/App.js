@@ -1,8 +1,8 @@
 import React from "react";
 import {Route, Routes} from "react-router-dom";
 
-import {MainLayout} from "./layouts";
-import {CarsPage, HomePage, NotFoundPage} from "./pages";
+import {AuthRequireLayout, MainLayout} from "./layouts";
+import {CarsPage, HomePage, LoginPage, NotFoundPage, RegisterPage} from "./pages";
 
 const App = () => {
 
@@ -11,7 +11,13 @@ const App = () => {
             <Routes>
                 <Route path={'/'} element={<MainLayout/>}>
                     <Route index element={<HomePage/>}/>
-                    <Route path={'/cars'} element={<CarsPage/>}/>
+
+                    <Route element={<AuthRequireLayout/>}>
+                        <Route path={'/cars'} element={<CarsPage/>}/>
+                    </Route>
+
+                    <Route path={'/login'} element={<LoginPage/>}/>
+                    <Route path={'/register'} element={<RegisterPage/>}/>
                     <Route path={'*'} element={<NotFoundPage/>}/>
                 </Route>
             </Routes>
