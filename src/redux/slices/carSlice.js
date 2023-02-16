@@ -74,7 +74,7 @@ const carSlice = createSlice({
                 state.loading = false;
                 state.cars = action.payload;
             })
-            .addCase(getAll.pending, state => {
+            .addCase(getAll.pending, (state) => {
                 state.loading = true;
             })
             .addCase(getAll.rejected, (state, action) => {
