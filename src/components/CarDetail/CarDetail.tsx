@@ -1,16 +1,14 @@
 import React, {FC} from "react";
 
-import {Cars} from "./components";
-
-const App: FC = () => {
+const CarDetail:FC = () => {
 
     return (
         <div>
-            <Cars/>
+            CarDetail:FC
         </div>
     );
 };
 
 export {
-    App
+    CarDetail
 };
