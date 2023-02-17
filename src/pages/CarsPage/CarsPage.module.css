@@ -1,0 +1,11 @@
+.CarsPage{
+    width: 80vw;
+    height: 100vh;
+}
+
+.CarsPageHr{
+    margin: 2vw 0;
+    height: 1.8vw;
+    width: 100%;
+    background: darkcyan;
+}

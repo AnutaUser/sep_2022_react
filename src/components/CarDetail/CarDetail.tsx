@@ -1,10 +1,25 @@
-import React, {FC} from "react";
+import React, {FC, ReactNode} from "react";
 
-const CarDetail:FC = () => {
+import {ICar} from "../../interfaces";
+import {useNavigate} from "react-router-dom";
+
+interface IProps {
+    car: ICar;
+    children?: ReactNode;
+}
+
+const CarDetail: FC<IProps> = ({car}) => {
+
+    const {id, brand, price, year} = car;
+    const navigate = useNavigate();
 
     return (
         <div>
-            CarDetail:FC
+            <div>ID -- {id}</div>
+            <div>Brand -- {brand}</div>
+            <div>Price -- {price}</div>
+            <div>Year -- {year}</div>
+            <button onClick={() => navigate('/cars')}>back</button>
         </div>
     );
 };

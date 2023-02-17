@@ -5,7 +5,7 @@ const cars = '/cars';
 const endPoints = {
     cars:{
         cars: cars,
-        byId: (id: string): string => `${cars}/id`,
+        byId: (id: string): string => `${cars}/${id}`,
     }
 };
 
